@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+
+    <h1>
+        <%= title %>
+    </h1>
+    <p>
+        <%= body %>
+    </p>
+    <form action="/post/<%= id %>" method="get">
+        <button type="submit" class="btn remove-btn">remove</button>
+    </form>
+
+
+    <%- include("partials/footer") -%>

@@ -5,7 +5,9 @@
     <% blogs.forEach(blog => { %>
         <div class="blog">
             <h3><%= blog.title %></h3>
-            <p><%= blog.body.substring(0,100) %> <a href="/<%= blog.title %>">...read more</a></p>
+            <p>
+                <%= blog.body.substring(0,100) %> <a href="/posts/<%= blog.id %>">...read more</a>
+            </p>
         </div>
     <% }); %>
 
